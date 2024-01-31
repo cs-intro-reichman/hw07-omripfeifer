@@ -29,7 +29,7 @@ public class SpellChecker {
 			
 		} else if (word1.charAt(0) == word2.charAt(0) ) {
 			
-			levenshtein(tail(word1), tail(word2)) ;
+			 return levenshtein(tail(word1), tail(word2)) ;
 		} else{
 			  int minLevenshtein = Math.min(levenshtein(tail(word1), word2) , levenshtein( word1, tail(word2))) ; 
 			 return 1 + Math.min(minLevenshtein, levenshtein(tail(word1), tail(word2))) ;
